@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="forms2.css" rel="stylesheet">
+      <h1 id="title"> Software requirement form
+        <title> Software requirement form</title>
+        </h1>
+    <p id="description"> Please complete this form to provide us with essential details about the software you would like us to develop. We will reach out to you based on the information you provide. </p>
+  </head>
+  <form id="survey-form"> 
+    <fieldset>
+      <label id="name-label">Name<input id="name" type="text" placeholder="kindly enter your name" required/></label>
+      <label id="email-label"> Email address <input id="email" type="email" placeholder="kindly enter your email address" required/></label>
+      <label id="number-label" >Telephone number<input id="number" type="number" pattern="[0-9]" min="10" max="12" placeholder="kindly enter your telephone number" /></label>
+    </fieldset>
+    <fieldset>
+      <legend>Your Preferred mode of contact</legend>
+      <select id="dropdown">
+        <option>Email address</option>
+        <option>Telephone number</option>
+      </select>
+      </fieldset>
+<fieldset>
+    <legend>When would you like to be contacted?</legend>
+    <label>
+        <input type="radio" name="tasks" value="early" checked />
+        Early hours (8am - 11:59am)
+    </label>
+    <label>
+        <input type="radio" name="tasks" value="afternoon" />
+        After noon (12pm - 4:30pm)
+    </label>
+</fieldset>
+   <fieldset>
+     <legend>What specific tasks do you want the users to be able to perform?</legend>
+        <label><input  type="checkbox" checked name="tasks" value="1"/> Create a new account</label>
+         <label><input  type="checkbox" name="tasks" value="2"/> Log in to an existing account</label>
+         <label><input  type="checkbox" name="tasks" value="3"/> Update user profile information</label>
+         <label><input  type="checkbox" name="tasks" value="4"/> Upload files or documents</label>
+         <label><input  type="checkbox" name="tasks"value="5"/> Schedule appointments or events</label>
+         <label><input  type="checkbox" name="tasks" value="6"/>Make online payments</label>
+         <label><input  type="checkbox" name="tasks" value="7"/> Other</label>
+         </fieldset>
+         <fieldset>
+          <label for="bio">Kindly add extra details youll like us to know concerning the software you want to be developed
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="the software should include a database section as well as resources to guide first time users."></textarea>
+        </label>
+   </fieldset>
+   <button id="submit">Submit<button/>
+  </form>
+</html>
